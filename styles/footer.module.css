@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 6rem;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(1deg,rgba(255,237,237,0.85) 0%,rgba(255,255,255,0) 14rem);
+}
+
+.container span {
+    font-weight:bold;
+}
+
+.logo {
+    display: flex;
+    gap: 0.5rem;
+    align-items:center;
+    justify-content: flex-start;
+}
+
+.logo>span{
+    font-weight: bold;
+    font-size:1.5rem;
+}
+
+.social{
+    display: flex;
+    gap:2rem;
+}
