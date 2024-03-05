@@ -1,115 +1,119 @@
 .container {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
 
 .left {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.cherryDiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    background-color:var(--pink);
-    margin-top: 3rem;
-    border-radius:2rem;
-    padding: 1rem;
-    font-size:0.8rem;
-    color: var(--themeRed);
-    font-weight:bold ;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .heroText {
-    display: flex;
-    flex-direction: column;
-    font-size:4rem;
-    font-weight:bold;
+  display: flex;
+  flex-direction: column;
+  color: var(--gray);
+  font-size: 4rem;
+  font-weight: bold;
 }
 
 .minText {
-    color: var(--gray);
-    width:70%;
-    font-size:1.1rem;
-    font-weight: 900;
+  color: var(--gray);
+  width: 70%;
+  font-size: 1.1rem;
+  font-weight: 900;
 }
 
 .btn {
-    padding: 1rem 2.5rem;
+  padding: 1rem 2.5rem;
 }
 
 .right {
-    position: relative;
+  position: relative;
 }
 
 .imageContainer {
-    width: 38rem;
-    position: absolute;
-    top: -5rem;
-    left: 5rem;
+  width: 38rem;
+  position: absolute;
+  top: -5rem;
+  left: 5rem;
 }
 
-.contact{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content:center;
-    position: absolute;
-    width: max-content;
-    padding: 1rem;
-    top: 6rem;
-    left: 5rem;
-    border-radius: 5rem;
-    background-color:white;
-    color: var(--themeRed);
-    box-shadow: var(--shadow);
+.contact {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: max-content;
+  padding: 1rem;
+  top: 6rem;
+  left: 5rem;
+  border-radius: 5rem;
+  background-color: white;
+  color: var(--themeRed);
+  box-shadow: var(--shadow);
 }
 
-.contact div {
-    background-color: rgb(59,208,59);
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    width: 2.5rem;
-    display: flex;
-    height: 2.5rem;
+.Pizza {
+  display: flex;
+  gap: 1rem;
+  box-shadow: var(--shadow);
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  position: absolute;
+  top: 4rem;
+  left: 7rem;
+  object-position: center;
 }
 
-.contact:hover{
-    transform: scale(1.1);
-    cursor: pointer;
+.Pizza > :nth-child(1) {
+  width: 6rem;
+  height: 3.5rem;
+  overflow: hidden;
+}
+.Cake {
+  display: flex;
+  gap: 1rem;
+  box-shadow: var(--shadow);
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  position: absolute;
+  top: 2rem;
+  left: 35rem;
+  object-position: center;
 }
 
-.Pizza{
-    display: flex;
-    gap: 1rem;
-    box-shadow: var(--shadow);
-    background-color:white;
-    border-radius: .5rem;
-    padding: .5rem;
-    position: absolute;
-    bottom: 4rem;
-    left: 32rem;
-    width:max-content;
+.Cake > :nth-child(1) {
+  width: 6rem;
+  height: 7rem;
+  overflow: hidden;
 }
 
-.Pizza>:nth-child(1) {
-    width: 6rem;
-    height: 4rem;
-    overflow:hidden;
+.Burger {
+  display: flex;
+  gap: 1rem;
+  box-shadow: var(--shadow);
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 5rem;
+  left: 30rem;
+  width: max-content;
 }
 
-.Pizza>:nth-child(2){
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    font-weight:bold;
+.Burger > :nth-child(1) {
+  width: 6rem;
+  height: 3rem;
+  overflow: hidden;
 }
 
-.Pizza:hover{
-    cursor: pointer;
-    transform: scale(1.1);
+.Burger:hover,
+.Pizza:hover,
+.Cake:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }

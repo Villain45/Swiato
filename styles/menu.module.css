@@ -1,57 +1,87 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 6rem;
 }
 
 .heading {
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  justify-content: flex-start;
 }
 
-.heading>:nth-child(1)
-{
-    text-transform: uppercase;
-    color: var(--themeRed);
-    font-size: 1.5rem;
+.heading > :nth-child(1) {
+  text-transform: uppercase;
+  color: var(--themeRed);
+  font-size: 1.5rem;
 }
 
-.heading>:nth-child(2) {
-    font-size: 2.5rem;
-    margin-top: 1rem;
+.heading > :nth-child(2) {
+  font-size: 2.5rem;
+  margin-top: 1rem;
 }
 
 .menu {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 2rem;
-    column-gap: 3rem;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 3rem;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .imageWrapper {
-    height: 16rem;
-    width: 22rem;
-    position: relative;
-    overflow: hidden;
-    border-radius: 2rem;
+  height: 16rem;
+  width: 22rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
 }
 
 .foodItems {
-    display: flex;
-    align-items: flex-start;
-    justify-content:center;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.img:hover{
-    cursor: pointer;
-    transform: scale(1.1);
+.img:hover .hoverEffect {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.imageWrapper:hover .hoverEffect {
+  visibility: visible;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.hoverEffectText {
+  transition: 0.5s;
+  transform: translateY(1em);
+}
+
+.imageWrapper:hover .hoverEffectText {
+  transform: translateY(0);
+}
+
+.hoverEffect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(184, 184, 184);
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s visibility 0.5s;
 }

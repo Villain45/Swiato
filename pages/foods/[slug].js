@@ -2,8 +2,8 @@ import css from '../../styles/eachFoodSlug.module.css'
 import Image from 'next/image';
 import Layout from '../../components/Layout'
 import { client, urlFor } from "../../lib/client";
-import LeftArrow from '../../assets/arrowLeft.png'
-import RightArrow from '../../assets/arrowRight.png'
+import Minus from '../../assets/minus.png'
+import Plus from '../../assets/add.png'
 import { useState } from 'react';
 import {useStore} from '../../dataStore/store'
 import toast,{Toaster} from 'react-hot-toast'
@@ -56,7 +56,7 @@ export default function Food({foodItems}) {
                         <span>Quantity</span>
 
                         <div className={css.counter}>
-                            <Image src={LeftArrow} 
+                            <Image src={Minus} 
                             height={20}
                             width={20}
                             alt=""
@@ -67,7 +67,7 @@ export default function Food({foodItems}) {
 
                             <span>{Quantity}</span>
 
-                            <Image src={RightArrow} 
+                            <Image src={Plus} 
                             height={20}
                             width={20}
                             alt=""

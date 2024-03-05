@@ -18,7 +18,6 @@ const Header = () => {
         <div className={css.header}>
             {/* logo side */}
             <div className={css.logo}>
-                <Image src={Logo} alt="" width={80} height={80}/>
                 <span>Sw<span style={{color: 'var(--themeRed)'}}>ia</span>to</span>
             </div> 
 
